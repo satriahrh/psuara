@@ -7,10 +7,10 @@ from flask import Flask, json, make_response, request, jsonify
 import os
 
 ffmpeg = Ffmpeg(
-  os.getenv('TEMP_DIR', 'temp')
+  'temp',
 )
 file_storage = FileStorage(
-  os.getenv('FILE_STORAGE_DIR', 'storage')
+  'storage',
 )
 mysql_connector = MysqlConnector(
   os.getenv('MYSQL_HOST', 'localhost'),

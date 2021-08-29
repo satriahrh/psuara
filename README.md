@@ -24,7 +24,12 @@ curl --request GET 'http://127.0.0.1:5000/audio/user/1/phrase/1/m4a' -o './test_
 
 ## How to Run
 
-### Mysql Migration
+### Mysql
+
+To run the service, you may have mysql running locally, or somewhere.
+Then you need to adjust the mysql config on `.env`.
+
+After that, you need to make database migration using following schema migration.
 
 ```
 -- psuara.artifacts definition
